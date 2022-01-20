@@ -125,7 +125,8 @@ li a {
 }
 .card{
     display: grid;
-    grid-row-start: 3;
+    grid-row: 3 / 4;
+    grid-column: 1 / 4 ;
 }
 .item {
     display: grid;
@@ -190,4 +191,81 @@ li a {
 }
 h3 {
     font-size: 15px;
+}
+
+
+@media  (max-width: 1024px) {
+   
+    .container {
+        width: 780px;
+        margin: 0 auto; 
+    }
+    .head {
+        height: 50px;
+        flex-wrap: wrap;
+    }
+    .head a {
+        margin-left: 276px;
+    }
+    #nav ul li {
+        display: none;
+    }
+    .service__content div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sectioninput_content {
+        width: 60%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        /* display: grid;
+        grid-template-areas: 
+        "1fr"
+        "1fr"
+        "1fr"
+        "1fr"
+        "1fr"
+        "1fr"
+        "1fr"; */
+    }
+    .input_text1 {
+        margin-bottom: 15px;
+    }
+    .footer_content {
+        widows: 500px;
+        line-height: 25px;
+    }
+    .footer_content h3{
+        font-size: 11px;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .container {
+        margin: 0 auto;
+    }
+     .head {
+        padding: 6px 0;
+        height: 70px;
+        display: inline-block;
+    }
+    .head_p2 {
+        flex-wrap: wrap;
+    }
+    .head a {
+        margin-left: 0;
+    }
+    #nav ul {
+        flex-wrap: wrap;
+    }
+
+    #advantage{
+        flex-wrap: wrap;
+    }
+
+    .footer_content{
+        width: 200px;
+        margin: 0 auto;
+    }
 }

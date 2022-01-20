@@ -397,6 +397,9 @@ h3 {
         height: 50px;
         flex-wrap: wrap;
     }
+    /* .head_p2 {
+        flex-wrap: wrap;
+    } */
     .head a {
         margin-left: 276px;
     }
